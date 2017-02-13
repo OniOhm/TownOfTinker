@@ -26,6 +26,8 @@ body{
   background-color: #F0f0f0;
   border-style: solid;
   max-width: 500px;
+  font-size: 16pt;
+  font-family: 'Lora', serif;
 }
 .topNav{
   background-color: #4b3a1e;
