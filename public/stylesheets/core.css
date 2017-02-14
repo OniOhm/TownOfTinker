@@ -41,7 +41,7 @@ body{
   max-width: 80px;
   width: 100%;
   position: relative;
-  left: 10px;
+  /*left: 10px;*/
   margin-left: 10px;
 }
 .bottomNavHolder{
