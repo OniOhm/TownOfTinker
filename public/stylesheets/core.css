@@ -26,7 +26,8 @@ body{
   background-color: #F0f0f0;
   border-style: solid;
   max-width: 500px;
-  font-size: 16pt;
+  font-size: 12pt;
+  font-weight: 600;
   font-family: 'Lora', serif;
 }
 .topNav{
@@ -36,6 +37,7 @@ body{
   height: 30px;
 }
 .navButton{
+
   max-width: 80px;
   width: 100%;
   position: relative;
@@ -47,6 +49,20 @@ body{
   bottom: 0;
   transition: 0.4s;
 }
+/*Media queries*/
+@media (max-width:400px){
+
+  .navButton{
+    width: 60px;
+    left: 30px;
+  }
+  .paine{
+    font-size: 12pt;
+  }
+
+}
+
+
 /*
 }
 .bar{
