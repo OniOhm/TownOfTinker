@@ -5,15 +5,17 @@ font-family: 'Cinzel Decorative', cursive;
 /*font-family: 'Ruslan Display', cursive;*/
 font-weight: bold;
 color: white;
-background-color: #657d9d;
+background-color: #4a8139;
 padding: 50px;
 margin-top: 0;
 margin-bottom: 0;
+border-style: solid;
+border-color: #2d5023;
 }
 body{
     margin: 0;
     padding: 0;
-  background-color: #657d9d;
+  background-color: #4a8139;
 }
 .bottomNavHolder{
   background-color: #4b3a1e;
@@ -37,8 +39,7 @@ body{
   height: 30px;
 }
 .navButton{
-
-  max-width: 80px;
+  max-width: 48px;
   width: 100%;
   position: relative;
   /*left: 10px;*/
