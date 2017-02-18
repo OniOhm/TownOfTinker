@@ -42,13 +42,14 @@ body{
   max-width: 48px;
   width: 100%;
   position: relative;
-  /*left: 10px;*/
+  left: 40px;
   margin-left: 10px;
 }
 .bottomNavHolder{
   position: fixed;
   bottom: 0;
   transition: 0.4s;
+
 }
 /*Media queries*/
 @media (max-width:400px){
