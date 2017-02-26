@@ -3,21 +3,21 @@ const app = express();
 const path = require('path');
 const handlebars = require('express-handlebars')
 .create({defaultLayout: 'main'});
-const mongoose = require('mongoose');
-var Chap = require('./public/db/Chap.model.js');
-var bodyParser = require('body-parser');
-mongoose.promise = Promise;
-mongoose.connect('mongodb://localhost/bookKeeper');
+// const mongoose = require('mongoose');
+// var Chap = require('./public/db/Chap.model.js');
+// var bodyParser = require('body-parser');
+// mongoose.promise = Promise;
+// mongoose.connect('mongodb://localhost/bookKeeper');
 
 app.set('view engine', 'handlebars');
 app.engine('handlebars', handlebars.engine);
 
 app.set('port', process.env.PORT || 3000);
 app.use('/public', express.static(path.join(__dirname+'/public')));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended:true
-}));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({
+//   extended:true
+// }));
 
 app.get('/', function(req,res){
   res.render('Townsquare', {
@@ -39,10 +39,14 @@ app.get('/Archive', function(req,res){
     }
   });
 });
-app.get('/Chapters/:id', function(req,res){
+app.get('/Chapters/:title', function(req,res){
+  res.render('page',{
+    page:req.params.page,
+    title: req.params.title
+  });
   console.log('geting one Chapter');
   Chap.findOne({
-    _id: req.params.id
+    title: req.params.title
   })
   .exec(function(err,chapters){
     if(err){
