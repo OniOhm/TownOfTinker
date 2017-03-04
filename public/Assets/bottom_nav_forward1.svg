@@ -12,10 +12,10 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="20.468245mm"
    height="18.335222mm"
-   viewBox="0 0 20.468244 18.335222"
+   viewBox="0 0 20.468243 18.335224"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.0 r15299"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="bottom_nav_beginning1.svg">
   <defs
      id="defs2" />
@@ -27,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="57.113987"
-     inkscape:cy="272.08022"
+     inkscape:cx="57.11399"
+     inkscape:cy="246.80134"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -299,71 +299,67 @@
        y="210.97546"
        ry="5.5873046" />
     <g
-       id="g4536"
-       style="fill:#7c7e51;fill-opacity:1"
-       transform="translate(0.34158861,23.580552)">
+       id="g4553">
       <path
          inkscape:connector-curvature="0"
          id="path4712"
-         d="m 56.214157,224.24387 18.87076,-0.21269 -9.017886,8.93297 -0.166997,-4.67918 h -9.685877 z"
-         style="fill:#7c7e51;fill-opacity:1;stroke:#000000;stroke-width:0.539437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="m 56.555746,247.82442 18.87076,-0.21269 -9.017886,8.93297 -0.166997,-4.67918 h -9.685877 z"
+         style="fill:#7c7e51;fill-opacity:1;stroke:#000000;stroke-width:0.76499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <text
-         transform="scale(1.0469007,0.95520041)"
+         transform="scale(1.0469007,0.95520042)"
          id="text4716"
-         y="233.82599"
-         x="54.058571"
+         y="258.51248"
+         x="54.384857"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.88199377px;line-height:13.78592205px;font-family:Sansita;-inkscape-font-specification:Sansita;letter-spacing:0px;word-spacing:0px;fill:#7c7e51;fill-opacity:1;stroke:none;stroke-width:0.5514369"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Cinzel Decorative';-inkscape-font-specification:'Cinzel Decorative Bold';fill:#7c7e51;fill-opacity:1;stroke-width:0.5514369"
-           y="233.82599"
-           x="54.058571"
+           y="258.51248"
+           x="54.384857"
            id="tspan4714"
            sodipodi:role="line">Last</tspan></text>
     </g>
     <g
-       id="g4634"
-       transform="translate(0,22.71791)">
+       id="g4548">
       <path
          inkscape:connector-curvature="0"
          id="path4712-4"
-         d="m -23.871645,224.10906 -18.87076,-0.21269 9.017886,8.93297 0.166997,-4.67918 h 9.685877 z"
-         style="fill:#7c7e51;fill-opacity:1;stroke:#000000;stroke-width:0.539437;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="m -23.871645,246.82697 -18.87076,-0.21269 9.017886,8.93297 0.166997,-4.67918 h 9.685877 z"
+         style="fill:#7c7e51;fill-opacity:1;stroke:#000000;stroke-width:0.76499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.88199377px;line-height:13.78592205px;font-family:Sansita;-inkscape-font-specification:Sansita;letter-spacing:0px;word-spacing:0px;fill:#7c7e51;fill-opacity:1;stroke:none;stroke-width:0.55143684"
          x="-40.386623"
-         y="233.58058"
+         y="257.36398"
          id="text4716-8"
          transform="scale(1.0469007,0.95520043)"><tspan
            sodipodi:role="line"
            id="tspan4714-8"
            x="-40.386623"
-           y="233.58058"
+           y="257.36398"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Cinzel Decorative';-inkscape-font-specification:'Cinzel Decorative Bold';fill:#7c7e51;fill-opacity:1;stroke-width:0.55143684">First</tspan></text>
     </g>
     <g
-       id="g4639"
-       transform="translate(-1.8708867,24.054258)">
+       id="g4558">
       <rect
          rx="0.2061076"
          ry="2.5126722"
-         y="224.60435"
-         x="6.746736"
+         y="248.65862"
+         x="4.8758492"
          height="5.0253444"
          width="19.992437"
          id="rect4611"
-         style="fill:#7c7e51;fill-opacity:1;stroke:#000000;stroke-width:0.55050707;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="fill:#7c7e51;fill-opacity:1;stroke:#000000;stroke-width:0.76499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.88199377px;line-height:13.78592205px;font-family:Sansita;-inkscape-font-specification:Sansita;letter-spacing:0px;word-spacing:0px;fill:#7c7e51;fill-opacity:1;stroke:none;stroke-width:0.55143684"
-         x="9.5773592"
-         y="234.52608"
+         x="7.7902875"
+         y="259.7085"
          id="text4716-8-1"
          transform="scale(1.0469007,0.95520044)"><tspan
            sodipodi:role="line"
            id="tspan4714-8-8"
-           x="9.5773592"
-           y="234.52608"
+           x="7.7902875"
+           y="259.7085"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Cinzel Decorative';-inkscape-font-specification:'Cinzel Decorative Bold';fill:#7c7e51;fill-opacity:1;stroke-width:0.55143684">Top</tspan></text>
     </g>
   </g>

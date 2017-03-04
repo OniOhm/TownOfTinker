@@ -3,25 +3,32 @@ const app = express();
 const path = require('path');
 const handlebars = require('express-handlebars')
 .create({defaultLayout: 'main'});
-// const mongoose = require('mongoose');
-// var Chap = require('./public/db/Chap.model.js');
-// var bodyParser = require('body-parser');
-// mongoose.promise = Promise;
-// mongoose.connect('mongodb://localhost/bookKeeper');
+const mongoose = require('mongoose');
+var Chap = require('./public/db/Chap.model.js');
+var bodyParser = require('body-parser');
+mongoose.promise = Promise;
+mongoose.connect('mongodb://Oni:11111a@ds145128.mlab.com:45128/mean_jamez');
 
 app.set('view engine', 'handlebars');
 app.engine('handlebars', handlebars.engine);
 
 app.set('port', process.env.PORT || 3000);
 app.use('/public', express.static(path.join(__dirname+'/public')));
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({
-//   extended:true
-// }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended:true
+}));
 
 app.get('/', function(req,res){
-  res.render('Townsquare', {
-
+Chap.find( )
+  .exec(function(err,chap){
+    if(err){
+      res.sendStatus(500);
+    }else{
+      res.render('Townsquare',{
+        chaplist: chap
+      });
+    }
   });
 });
 app.get('/newChapter',function(req,res){
@@ -35,7 +42,9 @@ app.get('/Archive', function(req,res){
     if(err){
       res.send('error has occued');
     }else{
-      res.json(chapters);
+      res.render('Bookshelf',{
+        chaplist: chapters
+      });
     }
   });
 });
@@ -66,21 +75,22 @@ app.post('/addNewChapter',function(req,res){
     if(err){
       res.send('error saving book');
     }else{
-      console.log(chapters);
-      res.send(chapters);
+      res.render('Townsquare',{
+        chaplist: chapters
+      });
     }
   });
 });
-// app.post('/newChap2',function(req,res){
-//   Chap.create(req.body,function(err,book){
-//     if(err){
-//       res.send('error creating Chap');
-//     }else{
-//       console.log(Chap);
-//       res.send(Chap);
-//     }
-//   })
-// })
+app.post('/newChap2',function(req,res){
+  Chap.create(req.body,function(err,book){
+    if(err){
+      res.send('error creating Chap');
+    }else{
+      console.log(Chap);
+      res.send(Chap);
+    }
+  })
+})
 
 app.listen(app.get('port'), function(){
   console.log("Hey listen! Port "+ app.get('port')+ " is listening in")

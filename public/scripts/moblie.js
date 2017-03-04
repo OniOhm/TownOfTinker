@@ -1,8 +1,8 @@
-var paine = document.getElementById('paine');
+var paine = document.getElementsByClassName('paine');
 var beginning = document.getElementById('bottomNavLastPage');
 // Listeners
 window.addEventListener('scroll',scrollFadeOut,false);
-paine.addEventListener('click', scrollFadeIn,false);
+// paine.addEventListener('click', scrollFadeIn,false);
 beginning.addEventListener('click',windowchange,false);
 
 
@@ -16,4 +16,7 @@ function scrollFadeIn(){
 }
 function scrollFadeOut(){
   document.getElementById('bottomNavHolder').style.opacity = "0.0";
+}
+for (var i = 0; i < paine.length; i++) {
+    paine[i].addEventListener('click',scrollFadeIn, false);
 }
