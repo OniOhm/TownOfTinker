@@ -75,9 +75,7 @@ app.post('/addNewChapter',function(req,res){
     if(err){
       res.send('error saving book');
     }else{
-      res.render('Townsquare',{
-        chaplist: chapters
-      });
+      res.redirect('/');
     }
   });
 });
