@@ -6,10 +6,11 @@
   <object type="image/svg+xml" data="/public/Assets/bottom_nav_forward1.svg" id="bottomNavNext" class="navButton">Your browser does not support SVGs</object>
   <object type="image/svg+xml" data="/public/Assets/bottom_nav_LastPage.svg" id="bottomNavLastPage" class="navButton"><a href="/index">a</a></object>
 </div> -->
-{{#each chaplist}}
-<div class="paine" id="paine">
-  <h1 id="title">{{title}}</h1>
-  <hr>
-<p id="page">{{page}}</p>
-</div><br><br>
-{{/each}}
+
+    {{#each chaplist}}
+    <div class="paine" id="paine">
+      <h1 id="title">{{title}}</h1>
+      <div class="bar"></div>
+    <p id="page">{{page}}</p>
+    </div><br><br>
+    {{/each}}

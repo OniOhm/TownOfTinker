@@ -79,6 +79,20 @@ app.post('/addNewChapter',function(req,res){
     }
   });
 });
+app.post('/getChapter', function(req,res){
+  var name = req.body.title;
+  Chap.findOne({ title : name })
+  .exec(function(err,chap){
+    if(err){
+      res.sendStatus(400);
+    }else{
+      res.render('singlePage',{
+        title : chap.title,
+        page: chap.page
+      });
+    }
+  });
+});
 app.post('/newChap2',function(req,res){
   Chap.create(req.body,function(err,book){
     if(err){

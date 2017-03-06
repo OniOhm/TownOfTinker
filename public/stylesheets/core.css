@@ -6,11 +6,16 @@ font-family: 'Cinzel Decorative', cursive;
 font-weight: bold;
 color: white;
 background-color: #4a8139;
-padding: 50px;
+/*padding: 50px;*/
 margin-top: 0;
 margin-bottom: 0;
+margin: auto;
 border-style: solid;
 border-color: #2d5023;
+}
+.card{
+  background-color: #000000;
+  height: 100vh;
 }
 body{
     margin: 0;
@@ -21,9 +26,11 @@ body{
   background-color: #4b3a1e;
   width: 100%;
 }
+
 .paine{
   min-height: 100vh;
   width: 100%;
+  margin: auto;
   min-width: 300px;
   background-color: #F0f0f0;
   border-style: solid;
@@ -37,6 +44,12 @@ body{
   width: 100%;
   /*border-radius: 10px 10px 10px 10px;*/
   height: 48px;
+
+}
+.bar{
+  height: 5px;
+  background: #0d0d0d;
+  margin: 5px;
 }
 .navButton{
   max-width: 48px;
@@ -45,37 +58,56 @@ body{
   left: 40px;
   margin-left: 10px;
 }
-.bottomNavHolder{
-  position: fixed;
-  bottom: 0;
-  transition: 0.4s;
 
+.navElv{
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 .navElement{
-
   text-decoration: none;
   color: #FFFFFF;
   background: #554221;
   border-style: solid;
   font-family: 'Cinzel Decorative',cursive;
   border-color: #000000;
-  height: 48px;
+  margin-left: 10px;
   padding: 10px;
-  position: relative;
-  right: -10px;
+  display: inline;
+
 }
 #page{
   margin: 10px;
   line-height: 20px;
   letter-spacing: 2px;
-
+}
+#newChapForm{
+  margin: 20px;
+}
+#Searchbar{
+  float: right;
 }
 /*Media queries*/
-@media (max-width:400px){
+@media (max-width:450px){
 
   .navButton{
     width: 60px;
     left: 30px;
+  }
+.topNav{
+  height: 50px;
+}
+.navElement{
+  padding: 0;
+}
+  #Searchbar{
+    visibility: collapse;
+  }
+  #SearchMobile{
+    visibility: visible;
+    min-width: 200px;
+    height: auto;
+
   }
   .paine{
     font-size: 12pt;
@@ -86,13 +118,18 @@ body{
     max-width: 500px;
     margin-left: 400px;
   }
-  .paine{
-    margin-left: 400px;
-
+  #Searchbar{
+    visibility: visible;
+  }
+  #SearchMobile{
+    visibility: hidden;
   }
   .title{
 
     padding-left: 400px;
+  }
+  .paine{
+    max-width: 800px;
   }
 }
 
