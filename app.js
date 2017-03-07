@@ -84,7 +84,7 @@ app.post('/getChapter', function(req,res){
   Chap.findOne({ title : name })
   .exec(function(err,chap){
     if(err){
-      res.sendStatus(400);
+      res.render('errorpage');
     }else{
       res.render('singlePage',{
         title : chap.title,

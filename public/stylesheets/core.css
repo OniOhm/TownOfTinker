@@ -1,30 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Lora');
-.title{
-/*font-family: 'Alegreya','serif';*/
-font-family: 'Cinzel Decorative', cursive;
-/*font-family: 'Ruslan Display', cursive;*/
-font-weight: bold;
-color: white;
-background-color: #4a8139;
-/*padding: 50px;*/
-margin-top: 0;
-margin-bottom: 0;
-margin: auto;
-border-style: solid;
-border-color: #2d5023;
-}
-.card{
-  background-color: #000000;
-  height: 100vh;
-}
+
 body{
     margin: 0;
     padding: 0;
   background-color: #4a8139;
 }
-.bottomNavHolder{
-  background-color: #4b3a1e;
-  width: 100%;
+
+/*Id styles*/
+#page{
+  margin: 10px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+#newChapForm{
+  margin: 20px;
+}
+#Searchbar{
+  float: right;
+}
+/*Class styles*/
+.title{
+font-family: 'Cinzel Decorative', cursive;
+font-weight: bold;
+color: white;
+background-color: #4a8139;
+/*padding: 50px;*/
+text-align: center;
+padding-top: 20px;
 }
 
 .paine{
@@ -39,30 +41,17 @@ body{
   font-weight: 600;
   font-family: 'Lora', serif;
 }
-.topNav{
-  background-color: #4b3a1e;
-  width: 100%;
-  /*border-radius: 10px 10px 10px 10px;*/
-  height: 48px;
 
-}
 .bar{
   height: 5px;
   background: #0d0d0d;
   margin: 5px;
 }
-.navButton{
-  max-width: 48px;
-  width: 100%;
-  position: relative;
-  left: 40px;
-  margin-left: 10px;
-}
 
-.navElv{
-  display: flex;
-  align-content: center;
-  align-items: center;
+.Nav-container{
+  background-color: #4b3a1e;
+  width: 100%;
+  height: 48px;
 }
 .navElement{
   text-decoration: none;
@@ -71,37 +60,38 @@ body{
   border-style: solid;
   font-family: 'Cinzel Decorative',cursive;
   border-color: #000000;
-  margin-left: 10px;
-  padding: 10px;
-  display: inline;
 
+
+  display: inline;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-#page{
-  margin: 10px;
-  line-height: 20px;
-  letter-spacing: 2px;
+.topNav{
+  float: left;
 }
-#newChapForm{
-  margin: 20px;
-}
-#Searchbar{
-  float: right;
-}
+
+
+
+
+
 /*Media queries*/
 @media (max-width:450px){
-
   .navButton{
     width: 60px;
     left: 30px;
   }
 .topNav{
   height: 50px;
+
 }
 .navElement{
-  padding: 0;
+  padding-bottom: 30px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
   #Searchbar{
-    visibility: collapse;
+    display: none;
   }
   #SearchMobile{
     visibility: visible;
@@ -113,90 +103,19 @@ body{
     font-size: 12pt;
   }
 }
+
 @media (min-width:500px){
-  .bottomNavHolder{
-    max-width: 500px;
-    margin-left: 400px;
-  }
+
   #Searchbar{
-    visibility: visible;
+    display: inline;
   }
   #SearchMobile{
     visibility: hidden;
   }
   .title{
-
-    padding-left: 400px;
+    margin: auto;
   }
   .paine{
     max-width: 800px;
   }
 }
-
-/*
-}
-.bar{
-background-color: #4b3a1e;
-height: 50px;
-margin-top: 0;
-margin-bottom: 10px;
-}
-
-.navbar{
-  display: inline;
-  width: 100%;
-  color: white;
-
-  background-color: #c4b526;
-
-}
-.linkelement{
-  background-color: #c4b526;
-  font-family: 'Cabin','sans-serif';
-  /*font-size: 18px;*/
-  /*border-radius: 10px 10px 10px 10px;
-  margin-top: 0;
-  border-style: none;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-}
-.bottom{
-font-family: 'Lora', serif;
-font-size: 16pt;
-background-color: #F0f0f0;
-width: 100%;
-max-width: 500px;
-border-radius: 10px 10px 10px 10px;
-margin-bottom: 0;
-}
-.circle1{
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #657d9d;
-}
-.circle2{
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #4b3a1e;
-}
-.circle3{
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #c4b526;
-}
-  .circle4{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background-color: #F0f0f0;
-  }
-  .circle5{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background-color: #588b69;
-  }*/

@@ -21,16 +21,18 @@
     <![endif]-->
   </head>
   <body>
-
     <h1 class="title">The Town of Tenker</h1>
+
     <form class="form-inline" action="/getChapter" method="post" id="SearchMobile">
       <input type="text" name="title" value="" class="form-control" placeholder="Search for page...">
     </form>
+    <div class="Nav-container">
     <div class="topNav">
-      <div class="navElv">
-        <a href="/" class="navElement">Front page</a>
-        <a href="/Archive" class="navElement">Archive</a>
-        <a href="/newChapter" class="navElement">Add Chapter</a>
+      <a href="/" class="navElement">Front page</a>
+      <a href="/Archive" class="navElement">Archive</a>
+      <a href="/newChapter" class="navElement">Add Chapter</a>
+    </div>
+      <div class="Searchitem">
         <form class="form-inline" action="/getChapter" method="post" id="Searchbar">
           <input type="text" name="title" value="" class="form-control">
           <button type="submit" name="button" class="btn btn-default">Search</button>
