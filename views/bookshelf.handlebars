@@ -1,3 +1,6 @@
 {{#each chaplist}}
-<h1><a href="">{{title}}</a></h1><br>
+<form class="form-horizontal" action="/getChapter" method="post" id="newChapForm">
+  <input type="hidden" name="title" value="{{title}}" class="form-control" readonly>
+  <button type="submit" class="link">{{title}}</button>
+</form>
 {{/each}}
