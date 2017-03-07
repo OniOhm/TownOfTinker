@@ -103,6 +103,30 @@ app.post('/deleteChapter', function(req,res){
     }
   });
 });
+app.post('/FindUpdateChapter', function(req,res){
+  var name = req.body.updatetitle;
+  Chap.findOne({ title : name })
+  .exec(function(err,chap){
+    if(err){
+      res.render('errorpage');
+    }else{
+      res.render('updateChapter',{
+        title : chap.title,
+        page: chap.page
+      });
+    }
+  });
+});
+app.post('/UpdateChapter',function(req,res){
+  Chap.findOneAndUpdate({title: req.body.updateTitle},{ page: req.body.updatePage})
+    .exec(function(err){
+      if(err){
+        res.send('something went wrong');
+      }else{
+        res.redirect('/');
+      }
+    })
+})
 app.listen(app.get('port'), function(){
   console.log("Hey listen! Port "+ app.get('port')+ " is listening in")
 });

@@ -71,9 +71,17 @@ padding-top: 20px;
   display: flex;
   align-content: flex-end;
 }
+.bottomButtons{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+}
 .hiddenF{
-  float: right;
-  margin-right: 100px;
+  display: flex;
+}
+.hiddenF2{
+  display: flex;
 }
 
 
@@ -110,8 +118,11 @@ padding-top: 20px;
   .paine{
     font-size: 12pt;
   }
-  .hiddenF{
-    margin: auto;
+  .bottomButtons{
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+
   }
 }
 

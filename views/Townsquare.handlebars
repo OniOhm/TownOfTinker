@@ -13,9 +13,15 @@
       <div class="bar"></div>
     <p id="page">{{page}}</p>
     </div>
-    <form class="hiddenF" action="/deleteChapter" method="post">
-      <input type="hidden" name="deleteThis" value="{{title}}">
-      <button type="submit" name="btn btn-danger" class="btn btn-danger">Delete post</button>
-    </form>
+    <div class="bottomButtons">
+      <form class="hiddenF" action="/deleteChapter" method="post">
+        <input type="hidden" name="deleteThis" value="{{title}}">
+        <button type="submit" name="btn btn-danger" class="btn btn-danger">Delete post</button>
+      </form>
+      <form class="hiddenF2" action="/FindUpdateChapter" method="post">
+        <input type="hidden" name="updatetitle" value="{{title}}">
+        <button type="submit" name="btn btn-warning" class="btn btn-warning">Edit post</button>
+      </form>
+    </div>
     <br><br>
     {{/each}}
