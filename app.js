@@ -94,7 +94,7 @@ app.post('/getChapter', function(req,res){
   });
 });
 app.post('/deleteChapter', function(req,res){
-  Chap.remove({ title: req.body.title})
+  Chap.remove({ title: req.body.deleteThis})
   .exec(function(err,chap){
     if(err){
       res.send('Something didnt work');
