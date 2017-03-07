@@ -71,7 +71,10 @@ padding-top: 20px;
   display: flex;
   align-content: flex-end;
 }
-
+.hiddenF{
+  float: right;
+  margin-right: 100px;
+}
 
 
 
@@ -106,6 +109,9 @@ padding-top: 20px;
   }
   .paine{
     font-size: 12pt;
+  }
+  .hiddenF{
+    margin: auto;
   }
 }
 

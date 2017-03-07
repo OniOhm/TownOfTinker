@@ -42,29 +42,29 @@ app.get('/Archive', function(req,res){
     if(err){
       res.send('error has occued');
     }else{
-      res.render('Bookshelf',{
+      res.render('bookshelf',{
         chaplist: chapters
       });
     }
   });
 });
-app.get('/Chapters/:title', function(req,res){
-  res.render('page',{
-    page:req.params.page,
-    title: req.params.title
-  });
-  console.log('geting one Chapter');
-  Chap.findOne({
-    title: req.params.title
-  })
-  .exec(function(err,chapters){
-    if(err){
-      res.send('error has occured');
-    }else{
-      res.json(chapters);
-    }
-  });
-});
+// app.get('/Chapters/:title', function(req,res){
+//   res.render('page',{
+//     page:req.params.page,
+//     title: req.params.title
+//   });
+//   console.log('geting one Chapter');
+//   Chap.findOne({
+//     title: req.params.title
+//   })
+//   .exec(function(err,chapters){
+//     if(err){
+//       res.send('error has occured');
+//     }else{
+//       res.json(chapters);
+//     }
+//   });
+// });
 
 app.post('/addNewChapter',function(req,res){
   var newChapter = new Chap();
@@ -93,17 +93,16 @@ app.post('/getChapter', function(req,res){
     }
   });
 });
-app.post('/newChap2',function(req,res){
-  Chap.create(req.body,function(err,book){
+app.post('/deleteChapter', function(req,res){
+  Chap.remove({ title: req.body.title})
+  .exec(function(err,chap){
     if(err){
-      res.send('error creating Chap');
+      res.send('Something didnt work');
     }else{
-      console.log(Chap);
-      res.send(Chap);
+      res.redirect('/');
     }
-  })
-})
-
+  });
+});
 app.listen(app.get('port'), function(){
   console.log("Hey listen! Port "+ app.get('port')+ " is listening in")
 });

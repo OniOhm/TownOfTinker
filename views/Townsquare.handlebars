@@ -12,5 +12,10 @@
       <h1 id="title">{{title}}</h1>
       <div class="bar"></div>
     <p id="page">{{page}}</p>
-    </div><br><br>
+    </div>
+    <form class="hiddenF" action="/deleteChapter" method="post">
+      <input type="hidden" name="extra_sub" value= "{{title}}">
+      <button type="submit" name="btn btn-danger" class="btn btn-danger">Delete post</button>
+    </form>
+    <br><br>
     {{/each}}
