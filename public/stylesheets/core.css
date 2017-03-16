@@ -9,8 +9,7 @@ body{
 /*Id styles*/
 #page{
   margin: 10px;
-  line-height: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 #newChapForm{
   margin: 20px;
@@ -114,6 +113,7 @@ padding-top: 20px;
   display: flex;
   margin-right: 5px;
 }
+
   #Searchbar{
     display: none;
   }
