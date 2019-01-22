@@ -1,5 +1,27 @@
-<form class="form-horizontal" action="/UpdateChapter" method="post" id="newChapForm">
-  <input type="text" name="updateTitle" value="{{title}}" class="form-control" readonly>
-  <textarea name="updatePage" rows="40" cols="80" class="form-control">{{page}}</textarea>
-  <button type="submit"class="btn btn-primary">Update Chapter</button>
-</form>
+<div class="container-Chap">
+    <div class="navbar is-dark" id='Navbar'>
+             
+         <div class='level-left'>
+             <img src="../public/Assets/LogoNew.svg" alt="" class="image is-paddingless"> 
+              <a href="/" class="navbar-item">Front page</a>
+              <a href="/Archive" class="navbar-item">Archive</a>
+              <a href="/newChapter" class="navbar-item">Add Chapter</a>
+         </div>
+      <div class="navbar-end">
+          <form class="" action="/getChapter" method="post">
+              <input type="text" name="title" value="" class="input is-large searchFix" placeholder="Search">
+          </form>
+        </div>
+    </div>
+<div class="level">
+	<div class="level-item">
+	<form class="form-horizontal" action="/UpdateChapter" method="post" id="newChapForm">
+		<label for="updateTitle" class="title">Title</label>
+	  <input type="text" name="updateTitle" value="{{title}}" class="input" readonly>
+	  <label for="updatePage" class="title">Update Chapter</label>
+	  <textarea name="updatePage" rows="20" cols="100" class="textarea">{{page}}</textarea>
+	  <button type="submit"class="button is-link buttonfix level-right">Update Chapter</button>
+	</form>
+</div>
+</div>
+</div>

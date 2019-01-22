@@ -1,63 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Lora');
+@import 'bulma/css/bulma.css';
+html{
+    background-color:  #302B27;
+}
 body {
-    margin: 0;
-    padding: 0;
+    display: block;
+   padding: 10em;
     background: #274690;
+    height: 100%;
+}
+a{
+    text-decoration: overline;
 }
 
-a {
-    text-decoration: none;
-}
 
 
 /*Id styles*/
 
-#page {
-    margin: 10px;
-    letter-spacing: 1px;
-}
-
-#img {
-    height: 100%;
-    display: block;
-}
-
-#newChapForm {
-    margin: 20px;
-}
-
-#Searchbar {
-    float: right;
-}
-
-
 /*Class styles*/
-
-.title_container {
-    width: 100%;
-    height: 10em;
-    display: flex;
-    align-items: flex-end;
-    margin: 0;
-    padding: 0;
+#Navbar{
+    background-color:  #302B27;
+    margin-bottom: 3em;
 }
-
-.title {
-    font-family: 'Cinzel Decorative', cursive;
-    font-weight: bold;
-    color: #F5F3F5;
-    background-color: #1B264F;
-    /*padding: 50px;*/
-    padding-top: 20px;
-    margin: 20px;
-    font-size: 55pt;
+.searchFix{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 10px;
 }
-
+.imageFix{
+    position: absolute;
+}
+.container-Chap{
+    height: 100vh;
+}
 .page_title {
     font-family: 'Cinzel Decorative', cursive;
     text-align: center;
 }
-
+.buttonfix{
+    margin-top: 5px;
+}
 .header {
     background-color: #7BCB84;
 }
@@ -77,34 +59,10 @@ a {
 }
 
 .bar {
-    height: 5px;
-    background: #0d0d0d;
-    margin: 5px;
-}
-
-.Nav-container {
-    background-color: #302B27;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-}
-
-.navElement {
-    text-decoration: none;
-    color: #F5F3F5;
+    height: 2px;
     background: #302B27;
-    border-style: solid;
-    font-family: 'Cinzel Decorative', cursive;
-    border-color: #000000;
-    padding: 14px;
-    margin-left: 10px;
-}
-
-.topNav {
-    display: inline;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .bottomButtons {

@@ -14,6 +14,7 @@ app.engine('handlebars', handlebars.engine);
 
 app.set('port', process.env.PORT || 3000);
 app.use('/public', express.static(path.join(__dirname+'/public')));
+app.use('/bundles',express.static(path.join(__dirname + '/node_modules/bulma/css')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended:true
