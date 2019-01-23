@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Lora');
 @import 'bulma/css/bulma.css';
 html{
-    background-color:  #302B27;
+    background: #274690 !important;
 }
-body {
-    display: block;
-   padding: 10em;
-    background: #274690;
-    height: 100%;
-}
+
 a{
     text-decoration: overline;
 }
@@ -16,22 +11,29 @@ a{
 
 
 /*Id styles*/
-
-/*Class styles*/
 #Navbar{
     background-color:  #302B27;
     margin-bottom: 3em;
+}
+.Home_Title_Fix{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*Class styles*/
+.box_fix{
+    margin-bottom: 20px;
 }
 .searchFix{
     margin-top: 3px;
     margin-bottom: 3px;
     margin-right: 10px;
 }
-.imageFix{
-    position: absolute;
-}
+
 .container-Chap{
     height: 100vh;
+}
+.container_page{
+    height: 100%;
 }
 .page_title {
     font-family: 'Cinzel Decorative', cursive;
@@ -142,3 +144,11 @@ a{
         max-width: 800px;
     }
 }
+@media (max-width:500px) {
+body {
+    display: block;
+   padding: 10em;
+    background: #274690;
+    height: 100%;
+}
+    }

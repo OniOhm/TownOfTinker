@@ -1,24 +1,24 @@
- <div class="container-Chap">
- <div class="navbar is-dark" id='Navbar'>
-         <div class='level-left'>
-             <img src="../public/Assets/LogoNew.svg" alt="" class="image is-paddingless"> 
-              <a href="/" class="navbar-item">Front page</a>
-              <a href="/Archive" class="navbar-item">Archive</a>
-              <a href="/newChapter" class="navbar-item">Add Chapter</a>
-         </div>
-      <div class="navbar-end">
-          <form class="" action="/getChapter" method="post">
-              <input type="text" name="title" value="" class="input is-large searchFix" placeholder="Search">
-          </form>
-        </div>
-    </div>
-	{{#each chaplist}}
-<div class="level">
- <div class="level-item">
-			<form class="form-horizontal" action="/getChapter" method="post" id="newChapForm">
-	  			<input type="hidden" name="title" value="{{title}}" class="form-control" readonly>
-	 			 <button type="submit" class="link">{{title}}</button>
-			</form>
+
+		 <div class="navbar is-dark" id='Navbar'>
+		         <div class='level-left'>
+		             <img src="../public/Assets/LogoNew.svg" alt="" class="image is-paddingless"> 
+		              <a href="/" class="navbar-item">Front page</a>
+		              <a href="/Archive" class="navbar-item">Archive</a>
+		              <a href="/newChapter" class="navbar-item">Add Chapter</a>
+		         </div>
+		      <div class="navbar-end">
+		          <form class="" action="/getChapter" method="post">
+		              <input type="text" name="title" value="" class="input is-large searchFix" placeholder="Search">
+		          </form>
+		        </div>
+		    </div>
+			{{#each chaplist}}
+		<div class="level">
+		 <div class="level-item">
+					<form class="form-horizontal" action="/getChapter" method="post" id="newChapForm">
+			  			<input type="hidden" name="title" value="{{title}}" class="form-control" readonly>
+			 			 <button type="submit" class="link">{{title}}</button>
+					</form>
+				</div>
 		</div>
-</div>
-	{{/each}}
+			{{/each}}
