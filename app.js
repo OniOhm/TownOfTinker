@@ -49,23 +49,7 @@ app.get('/Archive', function(req,res){
     }
   });
 });
-// app.get('/Chapters/:title', function(req,res){
-//   res.render('page',{
-//     page:req.params.page,
-//     title: req.params.title
-//   });
-//   console.log('geting one Chapter');
-//   Chap.findOne({
-//     title: req.params.title
-//   })
-//   .exec(function(err,chapters){
-//     if(err){
-//       res.send('error has occured');
-//     }else{
-//       res.json(chapters);
-//     }
-//   });
-// });
+
 
 app.post('/addNewChapter',function(req,res){
   var newChapter = new Chap();

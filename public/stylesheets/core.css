@@ -8,25 +8,37 @@ a{
     text-decoration: overline;
 }
 
-
-
 /*Id styles*/
+#newChapterNotification{
+    display: none;
+}
+#tag-notification{
+   position: absolute;
+   display: none;
+
+}
+#title-notification{
+       position: absolute;
+   display: none;
+
+}
+
 #Navbar{
     background-color:  #302B27;
     margin-bottom: 3em;
 }
+/*Class styles*/
 .Home_Title_Fix{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-/*Class styles*/
+
 .box_fix{
     margin-bottom: 20px;
 }
 .searchFix{
     margin-top: 3px;
     margin-bottom: 3px;
-    margin-right: 10px;
 }
 
 .container-Chap{

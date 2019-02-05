@@ -5,28 +5,48 @@
              <img src="../public/Assets/LogoNew.svg" alt="" class="image is-paddingless"> 
               <a href="/" class="navbar-item">Front page</a>
               <a href="/Archive" class="navbar-item">Archive</a>
-              <a href="/newChapter" class="navbar-item">Add Chapter</a>
+              <a class="navbar-item">Search</a>
+              
          </div>
       <div class="navbar-end">
-          <form class="" action="/getChapter" method="post">
+{{!--           <form class="" action="/getChapter" method="post">
               <input type="text" name="title" value="" class="input is-large searchFix" placeholder="Search">
-          </form>
+          </form> --}}
+          <a href="/newChapter" class="navbar-item is-primary">New Story</a>
         </div>
     </div>
  <div class='level'>
   <div class="level-item">   
     <form class="" action="/addNewChapter?=addNewChapter" method="post" id="newChapForm">
       <div class='field'>
-        <div class="control">
-        <label for="title" class="title labelFix">Title</label>
-        <input type="text" class="input" name="title" value="" placeholder="Title" >
+        <div class="level">
+            <div class="field is-marginless">
+                <label for="title" class="label">Title</label>
+                <input type="text" class="input is-large" id="storyTitle" name="title" value="" placeholder="Title" >
+            </div>
+             <div class="field">
+                <label class="label">Tag</label>
+                <input type="text" name="tag" class="input is-large" id="storyTag">
+              </div>
       </div>
     </div>
     <div class="field">
       <div class='control'>
-        <label for="page" class="title labelFix">Page</label>
-        <textarea name="page" rows="20" cols="100" class="textarea" placeholder="Insert Thoughts"></textarea>
-        <button type="submit" class="button is-link buttonfix">Post Story</button>
+               <label for="page" class="label">Content</label>
+        <div class="level">
+          <div class="level-item">
+            <textarea name="page" rows="20" cols="100" class="textarea" placeholder="Insert Thoughts"></textarea>
+          </div>
+        </div>
+          <button type="submit" class="button is-link" id="postButton">Post Story</button>
+{{!--           <div class="level">
+            <div class="level-item"> --}}
+                <div class="notification is-danger is-large"  id="newChapterNotification">
+                    <p id="tag-notification">Tags must start with a # character and only one word</p><br>
+                    <p id="title-notification">story must include a title</p>
+{{!--                 </div>
+              </div> --}}
+          </div>
       </div>
     </div>
     </form>
